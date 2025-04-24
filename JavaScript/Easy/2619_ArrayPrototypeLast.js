@@ -10,11 +10,7 @@ Example 1:
 
     Input: nums = []
     Output: -1
-    Explanation: Because there are no elements, return -1.
-
-Constraints:
-    arr is a valid JSON array
-    0 <= arr.length <= 1000 */
+    Explanation: Because there are no elements, return -1. */
 
 //My Solution
 Array.prototype.last = function(){
@@ -25,6 +21,8 @@ Array.prototype.last = function(){
         return this[this.length - 1];
     }
 };
+
+
 
 //Best Practice
 Array.prototype.last = function() {
