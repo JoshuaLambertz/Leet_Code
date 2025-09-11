@@ -42,8 +42,10 @@ node5 = TreeNode(6)
 
 root.left = node1
 root.right = node2
-root.left = node3
-root.right = node4
-root.left = node5
 
-inOrder(root)
+node1.left = node3
+node1.right = node4
+
+node2.left = node5
+
+print(inOrder(root))
