@@ -24,16 +24,13 @@ class TreeNode:
     self.right = None
 
 
-def countNodes(root):
-    def inOrder(node):
-        if not node:
-            return 0
-        left = inOrder(node.left)
-        right = inOrder(node.right)
+def inOrder(node):
+    if not node:
+        return 0
+    left = inOrder(node.left)
+    right = inOrder(node.right)
 
-        return 1 + left + right
-    
-    return inOrder()
+    return 1 + left + right
 
 
 root = TreeNode(1)
@@ -48,3 +45,5 @@ root.right = node2
 root.left = node3
 root.right = node4
 root.left = node5
+
+inOrder(root)
