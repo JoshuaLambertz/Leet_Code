@@ -5,10 +5,6 @@ class Node:
 
 def deleteDuplicates(head):
         current = head
-
-        if current == None:
-            return
-
         while current:
             if current.next != None and current.val == current.next.val:
                 prev = current
